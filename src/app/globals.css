@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255; /* Changed to white */  --primary: 210, 210, 210;
+  --primary-foreground:  210, 210, 210;
+  --secondary: 210, 210, 210;
+  --secondary-foreground:   --primary: 210, 210, 210;
+  --primary-foreground:  210, 210, 210;
+  --secondary: 210, 210, 210;
+  --secondary-foreground: 222.2, 47.4%, 11.2%;
+  --muted: 210, 210, 210;
+  --muted-foreground:   --primary: 210, 210, 210;
+  --primary-foreground:  210, 210, 210;
+  --secondary: 210, 210, 210;
+  --secondary-foreground: 222.2, 47.4%, 11.2%;
+  --muted: 210, 210, 210;
+  --muted-foreground: 215.4, 16.3, 44;
+  --accent: 210, 40, 96.1;
+  --accent-foreground: 222.2, 47.4, 11.2;
+  --destructive: 0, 72, 51;
+  --destructive-foreground: 210, 40, 98;
+  --border: 214.3, 31.8, 91.4;
+  --input: 214.3, 31.8, 91.4;
+  --ring: 221.2, 83.2, 53.3;
+  --radius: 0.5rem;
+  --background-end-rgb: 255, 255, 255;   /* Changed to white */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb)); /* Ensuring background is white */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
